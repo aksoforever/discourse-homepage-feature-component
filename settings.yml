@@ -12,6 +12,7 @@ show_on:
     - top_menu
     - homepage
     - all
+    - categories
   description: top_menu refers to the <a href="/admin/site_settings/category/all_results?filter=top_menu">top menu site setting</a>
 
 show_for:
