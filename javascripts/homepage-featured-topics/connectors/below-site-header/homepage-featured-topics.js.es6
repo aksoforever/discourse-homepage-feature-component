@@ -13,10 +13,15 @@ export default {
     withPluginApi("0.1", api => {
       api.onPageChange((url, title) => {
         var home = url === "/" || url.match(/^\/\?/) || url === homeRoute;
+        var category = url ==="/categories";
 
         if (settings.show_on === "homepage") {
           var showBannerHere = home;
-        } else if (settings.show_on === "top_menu") {
+        } 
+        else if(settings.show_on === "category"){
+          var showBannerHere = category;
+        }
+        else if (settings.show_on === "top_menu") {
           var showBannerHere = topMenuRoutes.indexOf(url) > -1 || home;
         } else {
           var showBannerHere =
