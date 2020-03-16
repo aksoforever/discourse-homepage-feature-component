@@ -41,8 +41,8 @@
       max-width: 500px;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      align-items: left;
+      justify-content: left;
 
       @media screen and (min-width: 650px) {
         &:first-of-type:not(:last-of-type) {
@@ -85,6 +85,9 @@
           padding: 1em 0 1em;
         }
       }
+      h4{
+        padding:1em 0 .8em;
+        font-size:$font-up-1;}
       .featured-topic-image {
         height: 200px;
         max-width: 450px;
