@@ -41,7 +41,7 @@ export default {
             ) {
               // Get posts from tag
               let customFeaturedTopics = [];
-              result.topic_list.topics.slice(0, 3).forEach(function(topic) {
+              result.topic_list.topics.slice(0, 4).forEach(function(topic) {
                 customFeaturedTopics.push(Topic.create(topic));
               });
               component.set("loadingFeatures", false);
