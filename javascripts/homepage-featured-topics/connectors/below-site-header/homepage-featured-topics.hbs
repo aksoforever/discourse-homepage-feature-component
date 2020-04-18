@@ -12,10 +12,11 @@
           <div class="featured-topics">
             {{#each customFeaturedTopics as |t|}}
               <div class="featured-topic">
-                <div class="featured-topic-text">
-                  <h3>{{topic-link t}}</h3>
-                  <h4>{{category-link t.category}}</h4>
-                </div>
+                <div class="featured-topic-image" style="background-image: url({{t.image_url}})">
+                  <div class="featured-topic-text">
+                    <h3>{{topic-link t}}</h3>
+                    <h4>{{category-link t.category}}</h4>
+                  </div>
                 </div>
 
               </div>
